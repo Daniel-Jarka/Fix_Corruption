@@ -1,0 +1,52 @@
+Paul Wang
+CS Login: pwang12
+
+Daniel Jarka
+CS Login: Djarka01
+
+ACKNOWLEDGEMENTS 
+
+    We looked at online resources on how to implement standard input and output. 
+    Used Hanson Interface quick reference to implement Hanson structures. 
+    Used cppreference for general information on standard library functions.
+
+    We had help from TAs Max and Valeria
+
+IMPLEMENTATION DETAILS
+
+    The readaline function has been fully and correctly implemented. It 
+    dynamically handles input lines of varying lengths, storing them in a 
+    data array. It ensures that all characters are read and stored efficiently,
+    regardless of whether the input is shorter or longer than 1000 characters.
+
+    The restoration process has been fully implemented. The program successfully
+    converts corrupted PGM files into valid raw PGM format.
+
+    The program handles both file input and standard input (stdin) seamlessly.
+
+    Memory management has been carefully implemented to avoid leaks. 
+    There are no Valgrind errors, and no bytes are lost, except for the still 
+    reachable bytes in atoms, which are managed by the Hanson library.
+    All dynamically allocated memory is properly freed using freeTable and 
+    freeSeq functions.
+
+
+    The program uses Hanson’s Table, Seq, and Atom interfaces to manage data 
+    efficiently.
+
+        Table is used to store and identify duplicate or corrupted lines.
+
+        Seq is used to store the valid PGM data lines.
+
+        Atom is used to create unique keys for sequences in the table.
+
+    The program uses assert statements to validate file opening and memory 
+    allocation, as well as reading input/file
+
+    The program processes large input files and handles dynamic memory 
+    allocation without performance issues.
+
+
+TIME SPENT
+
+    Spent approximately 20 hours on the project each
